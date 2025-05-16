@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CV Online</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="#" data-target="menu">Home</a></li>
+      <li><a href="https://github.com/Nicholas-42" target="_blank">Portfólio</a></li>
+      <li><a href="#" data-target="formacao">Formação</a></li>
+      <li><a href="#" data-target="contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Seção Principal -->
+    <section id="menu" class="page active"> <!--Active para iniciar a pagina com 'Sobre Mim' ativo-->
+      <h1>Sobre Mim</h1>
+      <p>Nome: Nicholas Cavalcanti</p>
+      <p>Idade: 21 anos</p>
+      <p>Localização: Maringá - PR</p>
+      <p>Ocupação atual: Faço manutenção de baterias de lítio e aparelhos elétricos</p>
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao" class="page">
+      <h1>Formação & Idiomas</h1>
+      <ul>
+        <li>Bacharel em Ciência da Computação — Uninter (cursando)
+        </li>
+        <li>Inglês intermediário, Português: Fluente</li>
+      </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="page">
+      <h1>Contato</h1>
+      <form id="formContato">
+        <label>
+          Nome:<br>
+          <input type="text" name="nome" required>
+        </label><br><br>
+        <label>
+          Email:<br>
+          <input type="email" name="email" required>
+        </label><br><br>
+        <label>
+          Mensagem:<br>
+          <textarea name="mensagem" rows="5" required></textarea>
+        </label><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="back.js"></script>
+</body>
+</html>
