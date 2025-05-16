@@ -1,0 +1,38 @@
+/* RESET simples */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* Menu fixo no topo */
+.menu {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #333;
+  padding: 0.5rem;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 1rex;
+  font-weight: bold;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+/* Todas as páginas começam escondidas */
+.page {
+  display: none;
+  padding: 0 1rem;
+}
+/* Apenas a ativa fica visível */
+.page.active {
+  display: block;
+}
